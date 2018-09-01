@@ -1,8 +1,4 @@
 require './test/test_helper.rb'
-require 'minitest/autorun'
-require 'minitest/pride'
-require './lib/ship'
-require 'pry'
 
 class ShipTest < Minitest::Test
 
@@ -41,7 +37,7 @@ class ShipTest < Minitest::Test
     assert_equal expected, actual
   end
 
-  def test_destroy_can_be_assigned_coordinates_vertically
+  def test_destroyer_can_be_assigned_coordinates_vertically
     ship = Ship.new("Destroyer", 2)
 
     expected = ['A1', 'B1']
